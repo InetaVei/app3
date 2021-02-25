@@ -32,7 +32,6 @@
     print "sio masyvo suma = " . array_sum($arr1) . "\n";
     print("<br>");
 
-
     // // ASOCIATYVUS MASYVAS
     print("<br>");
     $array_family = array(
@@ -45,20 +44,17 @@
 
     // jauniausias
     print("<br>");
-    print "jauniausias seimoje :". "\n" . min($array_family);
+    print "jauniausias seimoje yra : " . array_search(min($array_family), $array_family) . " " . min($array_family);
 
     // vyriausias
     print("<br>");
-    print "jauniausias seimoje :". "\n" . max($array_family);
+    print "vyriausias seimoje : " . array_search(max($array_family), $array_family) . " " . max($array_family);
 
     // amziaus suma
     print("<br>");
     print "seimos bendras amzius :" . "\n" . array_sum($array_family) . "\n";
 
-
     // // DAUGIAMATIS MASYVAS
-
-
 
     /* 2. Sukurkite asociatyvųjį masyvą, kuris reprezentuotų žmogų ir jo svorį ( “vardas1” => “svoris1”, “vardas2” => “svoris2” … ) ir:
             2.1. Raskite lengviausią žmogų (minimumas);
@@ -80,11 +76,11 @@
 
     // Raskite lengviausią žmogų (minimumas);
     print("<br>");
-    print "Lengviausias is visu :" . "\n" . min($arr4) . "\n";   // NEPAVYKSTA NURODYTI VARDO
+    print "Lengviausias is visu : " . array_search(min($arr4), $arr4) . " " . min($arr4); 
     
     // Sunkiausią (maximumas);
     print("<br>");
-    print "Sunkiausias is visu :" . "\n" . max($arr4) . "\n";    // NEPAVYKSTA NURODYTI VARDO
+    print "Sunkiausias is visu : " . array_search(max($arr4), $arr4) . " " . max($arr4); 
 
     // Susumuokite visų žmonių svorį
     print("<br>");
